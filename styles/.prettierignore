@@ -1,0 +1,7 @@
+.cache
+.next
+package.json
+package-lock.json
+public
+api/socks.js
+node-modules

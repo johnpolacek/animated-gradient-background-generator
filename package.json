@@ -3,18 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format-watch": "npm run format && onchange \"**/*.{js,jsx,json,md}\" -- prettier --write {{changed}}",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "next": "11.0.1",
+    "onchange": "^7.1.0",
+    "prettier": "^2.3.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "eslint": "7.31.0",
-    "eslint-config-next": "11.0.1"
   }
 }
