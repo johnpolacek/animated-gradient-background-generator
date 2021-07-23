@@ -4,13 +4,12 @@ const SettingsContext = createContext({ colorSelection: [] })
 
 const SettingsProvider = ({ children }) => {
   const [colorSelection, setColorSelection] = useState([
-    "#ee7752",
-    "#e73c7e",
-    "#23a6d5",
-    "#23d5ab",
+    "deepskyblue",
+    "darkviolet",
+    "blue",
   ])
-  const [angle, setAngle] = useState(-45)
-  const [speed, setSpeed] = useState(15)
+  const [angle, setAngle] = useState(300)
+  const [speed, setSpeed] = useState(5)
 
   return (
     <SettingsContext.Provider
