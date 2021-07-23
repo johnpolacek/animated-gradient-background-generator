@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Animated CSS Gradient Background Generator</title>
+        <title>Animated Gradient Background Generator</title>
         <meta
           name="description"
           content="A tool for creating animated background gradients in pure CSS."
@@ -19,18 +19,20 @@ export default function Home() {
 
       <SettingsProvider>
         <AnimatedBackground>
-          <main style={{ textAlign: "center", padding: "64px" }}>
-            <h1>Animated CSS Gradient Background Generator</h1>
+          <main style={{ textAlign: "center", padding: "32px" }}>
+            <h1 style={{ fontWeight: 200, padding: "16px", fontSize: "3em" }}>
+              Animated Gradient Background Generator
+            </h1>
             <Controls />
             <Output />
           </main>
-          <footer>
+          <footer style={{ textAlign: "center", padding: "64px" }}>
             <p>
               Created by <a href="http://johnpolacek.com">John Polacek</a>
             </p>
             <p>
-              Based on{" "}
-              <a href="https://codepen.io/P1N2O/pen/pyBNzX">a CodePen</a> by
+              Based on a{" "}
+              <a href="https://codepen.io/P1N2O/pen/pyBNzX">CodePen</a> by
               Manuel Pinto
             </p>
           </footer>

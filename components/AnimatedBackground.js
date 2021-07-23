@@ -16,7 +16,14 @@ const AnimatedBackground = ({ children }) => {
     "s ease infinite"
 
   return (
-    <div style={{ background, backgroundSize, animation, color: "white" }}>
+    <div
+      style={{
+        background,
+        "background-size": backgroundSize,
+        animation,
+        color: "white",
+      }}
+    >
       {children}
     </div>
   )

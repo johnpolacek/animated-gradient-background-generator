@@ -18,8 +18,9 @@ const Output = () => {
     "s ease infinite"
 
   const code = `.gradient-background {
-  background: ${background}
-  animation: ${animation}
+  background: ${background};
+  background-size: ${backgroundSize};
+  animation: ${animation};
 }
 
 @keyframes gradient-animation {
@@ -35,42 +36,46 @@ const Output = () => {
 }`
 
   return (
-    <pre
-      style={{
-        position: "relative",
-        background: "#fff",
-        color: "#222",
-        padding: "32px",
-        maxWidth: "640px",
-        margin: "64px auto",
-        borderRadius: "4px",
-        textAlign: "left",
-        whiteSpace: "pre",
-      }}
+    <div
+      style={{ position: "relative", maxWidth: "640px", margin: "64px auto" }}
     >
-      <code>{code}</code>
-      <button
+      <pre
         style={{
-          position: "absolute",
-          top: "8px",
-          right: "8px",
-          background: "royalblue",
-          color: "white",
-          padding: "8px 12px",
-          borderRadius: "8px",
-          border: "none",
-          fontSize: "16px",
-          cursor: "pointer",
-          lineHeight: 1,
-        }}
-        onClick={() => {
-          setCopied(true)
-          navigator.clipboard.writeText(code)
+          background: "#fff",
+          color: "#222",
+          padding: "32px",
+          width: "100%",
+          borderRadius: "4px",
+          textAlign: "left",
+          whiteSpace: "pre",
+          boxShadow: "0 2px 8px rgba(0,0,0,.33)",
+          overflowX: "scroll",
         }}
       >
-        {copied ? "copied" : "copy"}
-      </button>
-    </pre>
+        <code>{code}</code>
+        <button
+          style={{
+            position: "absolute",
+            top: "8px",
+            right: "8px",
+            background: "royalblue",
+            color: "white",
+            padding: "8px 12px",
+            borderRadius: "8px",
+            border: "none",
+            fontSize: "16px",
+            cursor: "pointer",
+            lineHeight: 1,
+          }}
+          onClick={() => {
+            setCopied(true)
+            navigator.clipboard.writeText(code)
+          }}
+        >
+          {copied ? "copied" : "copy"}
+        </button>
+      </pre>
+    </div>
   )
 }
 
