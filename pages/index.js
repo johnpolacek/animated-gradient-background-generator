@@ -35,6 +35,11 @@ export default function Home() {
               <a href="https://codepen.io/P1N2O/pen/pyBNzX">CodePen</a> by
               Manuel Pinto
             </p>
+            <p>
+              Open source on 
+              <a href="https://github.com/johnpolacek/animated-gradient-background-generator">Github</a>
+            </p>
+            
           </footer>
         </AnimatedBackground>
       </SettingsProvider>
