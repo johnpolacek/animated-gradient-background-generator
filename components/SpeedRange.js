@@ -13,7 +13,7 @@ const SpeedRange = () => {
           width: "100px",
           textAlign: "right",
         }}
-        for="speed"
+        htmlFor="speed"
       >
         Speed
       </label>

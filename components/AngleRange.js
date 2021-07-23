@@ -13,7 +13,7 @@ const AngleRange = () => {
           width: "100px",
           textAlign: "right",
         }}
-        for="angle"
+        htmlFor="angle"
       >
         Angle
       </label>

@@ -12,6 +12,7 @@ const Colors = () => {
     <div style={{ paddingBottom: "16px" }}>
       {colorSelection.map((color) => (
         <div
+          key={color}
           style={{
             background: color,
             display: "inline-block",
