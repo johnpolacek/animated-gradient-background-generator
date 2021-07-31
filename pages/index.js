@@ -28,7 +28,8 @@ export default function Home() {
           </main>
           <footer style={{ textAlign: "center", padding: "64px" }}>
             <p>
-              Created by <a href="http://johnpolacek.com">John Polacek</a>
+              Created by Chicago web developer{" "}
+              <a href="http://johnpolacek.com">John Polacek</a>
             </p>
             <p>
               Based on a{" "}
@@ -36,10 +37,11 @@ export default function Home() {
               Manuel Pinto
             </p>
             <p>
-              Open source on 
-              <a href="https://github.com/johnpolacek/animated-gradient-background-generator">Github</a>
+              Open sourced on{" "}
+              <a href="https://github.com/johnpolacek/animated-gradient-background-generator">
+                Github
+              </a>
             </p>
-            
           </footer>
         </AnimatedBackground>
       </SettingsProvider>
