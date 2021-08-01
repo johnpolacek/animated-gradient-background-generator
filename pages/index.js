@@ -19,14 +19,14 @@ export default function Home() {
 
       <SettingsProvider>
         <AnimatedBackground>
-          <main style={{ textAlign: "center", padding: "32px" }}>
+          <main style={{ textAlign: "center", padding: "32px 32px 0" }}>
             <h1 style={{ fontWeight: 200, padding: "16px", fontSize: "3em" }}>
               Animated Gradient Background Generator
             </h1>
             <Controls />
             <Output />
           </main>
-          <footer style={{ textAlign: "center", padding: "64px" }}>
+          <footer style={{ textAlign: "center", padding: "0 32px 64px" }}>
             <p>
               Created by Chicago web developer{" "}
               <a href="http://johnpolacek.com">John Polacek</a>
