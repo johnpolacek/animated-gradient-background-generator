@@ -27,6 +27,8 @@ const Random = () => {
           padding: "24px 48px",
           borderRadius: "8px",
           cursor: "pointer",
+          boxShadow: "0 0 4px #000",
+          border: "none",
         }}
       >
         RANDOM
