@@ -11,14 +11,17 @@
   },
   "dependencies": {
     "next": "11.0.1",
-    "onchange": "^7.1.0",
-    "prettier": "^2.3.2",
     "react": "17.0.2",
     "react-color": "^2.19.3",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
     "eslint": "^7.31.0",
-    "eslint-config-next": "^11.0.1"
-  }
+    "eslint-config-next": "^11.0.1",
+    "onchange": "^7.1.0",
+    "prettier": "^2.3.2"
+  },
+  "repository": "https://github.com/johnpolacek/animated-gradient-background-generator",
+  "license": "MIT-0",
+  "author": "John Polacek (https://johnpolacek.com/)"
 }
