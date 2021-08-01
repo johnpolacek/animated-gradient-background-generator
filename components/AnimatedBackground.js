@@ -12,7 +12,7 @@ const AnimatedBackground = ({ children }) => {
 
   const animation =
     "gradient-animation " +
-    colorSelection.length * Math.abs(speed - 11) +
+    colorSelection.length * (Math.abs(speed - 11) / 2) +
     "s ease infinite"
 
   return (

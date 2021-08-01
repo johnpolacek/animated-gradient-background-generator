@@ -2,6 +2,7 @@ import Colors from "./Colors"
 import AddColor from "./AddColor"
 import AngleRange from "./AngleRange"
 import SpeedRange from "./SpeedRange"
+import Random from "./Random"
 
 const Controls = () => (
   <div
@@ -10,13 +11,14 @@ const Controls = () => (
       maxWidth: "640px",
       borderRadius: "8px",
       margin: "auto",
-      padding: "16px 16px 48px",
+      padding: "32px",
     }}
   >
     <Colors />
     <AddColor />
     <AngleRange />
     <SpeedRange />
+    <Random />
   </div>
 )
 
